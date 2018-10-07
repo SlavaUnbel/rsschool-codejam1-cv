@@ -13,7 +13,7 @@
 				<li href="#contacts">Contacts</li>
 				<li href="#summary">Summary</li>
 				<li href="#skills">Skills</li>
-				<li href="#code-example">Code example</li>
+				<li href="#code-example">Code examples</li>
 				<li href="#experience">Experience</li>
 				<li href="#education">Education</li>
 				<li href="#english-level">English level</li>
@@ -49,6 +49,89 @@
 				<li>JavaScript</li>
 			</ul>
 			<p>But I'm getting acquainted with more and more information about <em>front-end developing</em>.</p>
+		</section>
+		<section>
+			<h1 id="code-example">Code Examples</h1>
+			<p>I will show you some JavaScript codes, which were our tasks on the 1<sub>st</sub> stage.</p>
+			<p>This is the 4<sub>th</sub> task "Quadratic-equation". Here I used ES5 standard because I didn't read abot the ES6.
+				<code>	function solveEquation(equation) {
+							var array=equation.split(' '); 
+							var a=+array[0]; 
+							var b=+array[4]; 
+							var c=+array[8];
+
+							if(array[3]=='-') b=-b; 
+							if(array[7]=='-') c=-c;
+
+							var D = Math.sqrt(Math.pow(b,2) - 4 * a * c); 
+							var x1 = (-b - D) / (2 * a); 
+							var x2 = (-b + D) / (2 * a); 
+							var arr = [Math.round(x1), Math.round(x2)]; 
+
+							return arr.sort(function(a,b) { 
+							return a - b; 
+							});
+						}
+				</code>
+			</p>
+			<p>Now let's look at the 8<sub>th</sub> task "Advanced-zeros". While doing this task, I was also looking a lecture about ES6 standard. So here I used it, as you can see.
+				<code>	function getZerosCount(number, base) {
+  							const multipliers = getMultipliers(number, base);
+  							const zerosArray = [];
+ 
+  							for (let i = 0; i < multipliers.length; i++) {
+    							const currentMultiplier = multipliers[i].value;
+    							let components = 0;
+ 
+    							for (let n = 1; Math.pow(currentMultiplier, n) <= number; n++) {
+      								components += Math.floor(number / Math.pow(currentMultiplier, n));
+    							}
+ 
+    						zerosArray.push(Math.floor(components / multipliers[i].count));
+  							}
+ 
+  							return Math.min(...zerosArray);
+						}
+ 
+						function getMultipliers(number, base) {
+  							const multipliers = [];
+ 
+  							if (base > 1) {
+    							for (var i = 2; i <= base; i++) {
+      								while (base % i === 0 && base > 1) {
+        								multipliers.push(i);
+        								base = base / i;
+      								}
+      								if (base / i === 1) {
+        								multipliers.push(base);
+      								}
+    							}
+  							}
+ 
+  							return getUniqMultipliers(multipliers)
+							}
+ 
+						function getUniqMultipliers(array) {
+  							const uniqMultipliers = [];
+ 
+  							for (let i = 0; i < array.length; i++) {
+    							if (!uniqMultipliers.includes(array[i])) {
+      								uniqMultipliers.push(array[i]);
+    							}
+  							}
+ 
+  							return uniqMultipliers.map((uniqMultiplier) => {
+    							const count = array.filter(multiplier => multiplier === uniqMultiplier).length;
+ 
+    							return {
+      								value: uniqMultiplier,
+      								count: count
+    							}
+  							})
+						}
+				</code>
+			</p>
+			<p><em>It's my favorite tasks, so I decided to show exactly them.</em></p>
 		</section>
 	</main>
 </body>
