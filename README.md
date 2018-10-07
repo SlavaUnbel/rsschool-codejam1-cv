@@ -1,4 +1,5 @@
 # CodeJam-1 "Curriculum Vitae"
+P.S. THis is my first CV, I'll try to do my best :)
 
 ### Deadline: 07-09-2018 18:00
 
