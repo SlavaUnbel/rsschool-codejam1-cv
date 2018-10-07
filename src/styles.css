@@ -21,12 +21,18 @@ h1, h2 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 28px;
+  font-size: 32px;
   text-decoration: underline;
   font-weight: bold;
   margin-bottom: 30px;
 }
 h2 {
+  font-size: 28px;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+h3 {
   font-size: 24px;
   margin-bottom: 40px;
 }
@@ -156,4 +162,7 @@ footer {
 .social-networks>a:hover {
   background-color: red;
   border: 0px;
+}
+.image {
+  position: relative;
 }
