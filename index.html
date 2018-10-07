@@ -9,35 +9,35 @@
 	<header>
 		<nav id="top">
 			<ul>
-				<li href="#name-and-surname">Name, Surname</li>
-				<li href="#contacts">Contacts</li>
-				<li href="#summary">Summary</li>
-				<li href="#skills">Skills</li>
-				<li href="#code-example">Code examples</li>
-				<li href="#experience">Experience</li>
-				<li href="#education">Education</li>
-				<li href="#english-level">English level</li>
+				<li><a href="#name-and-surname">Name, Surname</a></li>
+				<li><a href="#contacts">Contacts</a></li>
+				<li><a href="#summary">Summary</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#code-example">Code examples</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#english-level">English level</a></li>
 			</ul>
 		</nav>
-		<h1 id="name-and-surname">Slava Levkovich</h1><hr>
+		<h1 id="name-and-surname">Slava Levkovich</h1>
 		<h2 class="introduction">Welcome to my first CV page!</h2>
 		<h1 id="contacts">My contacts</h1>
 		<div class="social-networks">
-			<a href="https://github.com/UnbelievablySmart"><img src="github.png" width="100" height="100" align="center">My GitHub Account</a>
-			<a href="https://vk.com/id208041605"><img src="vkontakte.png" width="100" height="100" align="center">My VK Account</a>
-			<a href="https://plus.google.com/u/0/114717862075661923603"><img src="google.png" width="100" height="100" align="center">My Google+ Account</a>
-			<p>Follow these links to contact me or write <a class="my-mail" href="mailto:slavlen1999@gmail.com">here</a></p>
+			<a href="https://github.com/UnbelievablySmart" target="_blank"><img src="images/github.png" width="50" height="50" align="center">My GitHub Account</a>
+			<a href="https://vk.com/id208041605" target="_blank"><img src="images/vkontakte.png" width="50" height="50" align="center">My VK Account</a>
+			<a href="https://plus.google.com/u/0/114717862075661923603" target="_blank"><img src="images/google.png" width="50" height="50" align="center">My Google+ Account</a>
+			<p>Follow these links to contact me or write <a class="my-mail" href="mailto:slavlen1999@gmail.com">here</a>.</p>
 		</div>
 	</header>
 	<main>
 		<section>
 			<h1 id="summary">My summary</h1>
 			<div class="profile-photo">
-				<img src="images/profile_photo.jpg" width="400" height="400">
+				<img src="images/profile_photo.jpg" width="405" height="540">
 			</div>
-			<p>Hi, my name is Slava Levkovich, and I'm very glad to introduce myself to you. I'm a student of the 3<sub>rd</sub> course in <a href="http://www.bseu.by/">BSEU University</a>. I didn't have an experience in IT before. It appreciates me, first of all, because it seems very intresting to create something new by just typing some code. A few hours of hard work and you can see the result in your successfully working program.</p><hr>
-			<p>As I said, I didn't have experience before. But I'm an ambitious person and I always achieve my goals. This summer I got intrested in Informatical Technologies and started my self-education. And, finally, I signed up for these courses.</p><hr>
-			<p>I know how difficult is the way of those people, who are trying to study this discipline, but I'll do my best, keep studying and be up-to-date. I want you to believe in me and my ability to work hard and never give up when facing difficulties.</p>
+			<p>Hi, my name is Slava Levkovich, and I'm very glad to introduce myself to you. I'm a student of the 3<sub>rd</sub> course in <a href="http://www.bseu.by/">BSEU University</a>. I didn't have an experience in IT before. It appreciates me, first of all, because it seems very intresting to create something new by just typing some code. A few hours of hard work and you can see the result in your successfully working program.<br>
+			As I said, I didn't have experience before. But I'm an ambitious person and I always achieve my goals. This summer I got intrested in Informatical Technologies and started my self-education. And, finally, I signed up for these courses.<br>
+			I know how difficult is the way of those people, who are trying to study this discipline, but I'll do my best, keep studying and be up-to-date. I want you to believe in me and my ability to work hard and never give up when facing difficulties.</p>
 		</section>
 		<section>
 			<h1 id="skills">My skills</h1>
@@ -54,91 +54,89 @@
 			<h1 id="code-example">Code Examples</h1>
 			<p>I will show you some JavaScript codes, which were our tasks on the 1<sub>st</sub> stage.</p>
 			<p>This is the 4<sub>th</sub> task "Quadratic-equation". Here I used ES5 standard because I didn't read abot the ES6.
-				<code>	function solveEquation(equation) {
-							var array=equation.split(' '); 
-							var a=+array[0]; 
-							var b=+array[4]; 
-							var c=+array[8];
+				<pre><code>function solveEquation(equation) {
+	var array=equation.split(' '); 
+	var a=+array[0]; 
+	var b=+array[4]; 
+	var c=+array[8];
 
-							if(array[3]=='-') b=-b; 
-							if(array[7]=='-') c=-c;
+	if(array[3]=='-') b=-b; 
+	if(array[7]=='-') c=-c;
 
-							var D = Math.sqrt(Math.pow(b,2) - 4 * a * c); 
-							var x1 = (-b - D) / (2 * a); 
-							var x2 = (-b + D) / (2 * a); 
-							var arr = [Math.round(x1), Math.round(x2)]; 
+	var D = Math.sqrt(Math.pow(b,2) - 4 * a * c); 
+	var x1 = (-b - D) / (2 * a); 
+	var x2 = (-b + D) / (2 * a); 
+	var arr = [Math.round(x1), Math.round(x2)]; 
 
-							return arr.sort(function(a,b) { 
-							return a - b; 
-							});
-						}
-				</code>
+	return arr.sort(function(a,b) { 
+		return a - b; 
+	});
+}</code></pre>
 			</p>
 			<p>Now let's look at the 8<sub>th</sub> task "Advanced-zeros". While doing this task, I was also looking a lecture about ES6 standard. So here I used it, as you can see.
-				<code>	function getZerosCount(number, base) {
-  							const multipliers = getMultipliers(number, base);
-  							const zerosArray = [];
+				<pre><code>function getZerosCount(number, base) {
+	const multipliers = getMultipliers(number, base);
+	const zerosArray = [];
  
-  							for (let i = 0; i < multipliers.length; i++) {
-    							const currentMultiplier = multipliers[i].value;
-    							let components = 0;
+	for (let i = 0; i < multipliers.length; i++) {
+    	const currentMultiplier = multipliers[i].value;
+    	let components = 0;
  
-    							for (let n = 1; Math.pow(currentMultiplier, n) <= number; n++) {
-      								components += Math.floor(number / Math.pow(currentMultiplier, n));
-    							}
+    	for (let n = 1; Math.pow(currentMultiplier, n) <= number; n++) {
+      		components += Math.floor(number / Math.pow(currentMultiplier, n));
+    	}
  
-    						zerosArray.push(Math.floor(components / multipliers[i].count));
-  							}
+    	zerosArray.push(Math.floor(components / multipliers[i].count));
+	}
  
-  							return Math.min(...zerosArray);
-						}
+  	return Math.min(...zerosArray);
+}
  
-						function getMultipliers(number, base) {
-  							const multipliers = [];
+	function getMultipliers(number, base) {
+  		const multipliers = [];
  
-  							if (base > 1) {
-    							for (var i = 2; i <= base; i++) {
-      								while (base % i === 0 && base > 1) {
-        								multipliers.push(i);
-        								base = base / i;
-      								}
-      								if (base / i === 1) {
-        								multipliers.push(base);
-      								}
-    							}
-  							}
+  		if (base > 1) {
+    		for (var i = 2; i <= base; i++) {
+      			while (base % i === 0 && base > 1) {
+        			multipliers.push(i);
+        			base = base / i;
+      			}
+      			if (base / i === 1) {
+        			multipliers.push(base);
+      			}
+    		}
+  		}
  
-  							return getUniqMultipliers(multipliers)
-							}
+  		return getUniqMultipliers(multipliers)
+	}
  
-						function getUniqMultipliers(array) {
-  							const uniqMultipliers = [];
+	function getUniqMultipliers(array) {
+  		const uniqMultipliers = [];
  
-  							for (let i = 0; i < array.length; i++) {
-    							if (!uniqMultipliers.includes(array[i])) {
-      								uniqMultipliers.push(array[i]);
-    							}
-  							}
+  		for (let i = 0; i < array.length; i++) {
+    		if (!uniqMultipliers.includes(array[i])) {
+      			uniqMultipliers.push(array[i]);
+    		}
+  		}
  
-  							return uniqMultipliers.map((uniqMultiplier) => {
-    							const count = array.filter(multiplier => multiplier === uniqMultiplier).length;
+  		return uniqMultipliers.map((uniqMultiplier) => {
+    		const count = array.filter(multiplier => multiplier === uniqMultiplier).length;
  
-    							return {
-      								value: uniqMultiplier,
-      								count: count
-    							}
-  							})
-						}
-				</code>
+    		return {
+      			value: uniqMultiplier,
+      			count: count
+    		}
+  		})
+	}</code></pre>
 			</p>
 			<p><em>It's my favorite tasks, so I decided to show exactly them.</em></p>
 		</section>
 		<section>
 			<h1 id="experience">My experience</h1>
-			<p>I had a lot of experience while I was working with HTML & CSS, now I'm working hard on your tasks about JavaScript. I passed courses on <a href="https://www.codecademy.com">Codeacademy</a>. <em>Also I can show you what I've done in HTML & CSS, started doing tasks in JavaScript:<em></p>
+			<p>I had a lot of experience while I was working with HTML & CSS, now I'm working hard on your tasks about JavaScript. I passed courses on <a href="https://www.codecademy.com">Codeacademy</a>. Also I can show you what I've done in HTML & CSS, started doing tasks in JavaScript:</p>
 			<p>
-				<a download href="../HTML&CSS.zip"><img src="images/download.png">This is my work with HTML & CSS</a><hr>
-				<a download href="../JavaScript.zip"><img src="images/download.png">This is my work with JavaScript</a>
+				<a download href="../HTML&CSS.zip"><img src="images/download.png" width="20" height="20" align="center">This is my work with HTML & CSS</a><br>
+				<a download href="../JavaScript.zip"><img src="images/download.png" width="20" height="20" align="center">This is my work with JavaScript</a>
 			</p>
 		</section>
 		<section>
@@ -148,7 +146,7 @@
 				<li><a href="https://www.ozon.ru/context/detail/id/21469102/">HTML & CSS. Developing and Design of websites</a></li>
 				<li><a href="https://www.ozon.ru/context/detail/id/140543672/">JavaScript & jQuery. Interactive web-development</a></li>
 			</ul>
-			<p>I didn't finish the second book, but I will do it soon. Also there is a useful cite, where everything about frontend development is described: <a href="http://learn.javascript.ru/"><img src="http://learn.javascript.ru/img/sitetoolbar__logo_ru.svg" width="100" height="100">Study book</a></p>
+			<p>I didn't finish the second book, but I will do it soon. Also there is a useful cite, where everything about frontend development is described: <a href="http://learn.javascript.ru/"><img src="http://learn.javascript.ru/img/sitetoolbar__logo_ru.svg" width="100" height="40" align="center">Study book</a></p>
 			<p>I also visit some webinars on <a href="http://youtube.com/">YouTube</a>, read news on <a href="http://habr.com/">Habr</a> and find sources to study, for example:</p>
 			<ul>
 				<li><a href="https://www.freecodecamp.org/">Free Code Camp</a></li>
@@ -166,9 +164,9 @@
 	</main>
 	<footer>
 		<ul>
-			<li href="#top"><strong>Come back to the start of CV</strong></li>
+			<li><a href="#top"><strong>Come back to the start of CV</strong></li>
 			<li><a href="mailto:slavlen1999@gmail.com"><strong>Contact me</strong></a></li>
-			<li><strong>Creation date of CV:</strong> <time>2018-10-07 15:06</time></li>
+			<li><strong>Creation date of CV: </strong><time>2018-10-07 15:06</time></li>
 		</ul>
 	</footer>
 </body>
